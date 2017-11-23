@@ -30,6 +30,23 @@
 			</nav>
 		</div>
 
+		<div class="mobile-header" id="mobile-element">
+			<nav>
+				<div class="image-container">
+					<a href="#home"><img src="resources/images/ic-logo.svg"></a>
+				</div>
+				<div class="image-container">
+					<a href="on-compus"><img src="resources/images/ic-on-campus.svg"></a>
+				</div>
+				<div class="image-container">
+					<a href="online"><img src="resources/images/ic-online.svg"></a>
+				</div>
+				<div class="image-container">
+					<a href="sign-in"><img src="resources/images/ic-login.svg"></a>
+				</div>
+			</nav>
+		</div>
+
 		<!-- MAIN BANNER -->
 
 		<div class="main-banner" id="home">
@@ -50,7 +67,7 @@
 		<!-- UPDATES -->
 
 		<div class="presenter">
-			<div class="focus-item">
+			<div class="focus-item updates">
 				<div class="image-container">
 					<img src="resources/images/information-main.jpg" alt="Pic of Emanuel looking smart">
 				</div>
@@ -61,12 +78,13 @@
 				</div>	
 			</div>
 
-			<div class="selector">
+			<div class="selector updates">
 
 				<a href="#">
 					<div class="item one">
 						<div class="image-container">
-							<img src="resources/images/information-orientation.jpg" alt="Orientation picture">
+							<img src="resources/images/information-orientation.jpg" alt="Orientation picture" id="desktop-element">
+							<img src="resources/images/information-orientation-mobile.jpg" alt="Orientation picture" id="mobile-element">
 						</div>
 						<div class="item-description">
 							<h3>Orientation date</h3>
@@ -78,7 +96,8 @@
 				<a href="#">
 					<div class="item two">
 						<div class="image-container">
-							<img src="resources/images/information-campus.jpg" alt="Campus Picture">
+							<img src="resources/images/information-campus.jpg" alt="Campus Picture" id="desktop-element">
+							<img src="resources/images/information-campus-mobile.jpg" alt="Campus picture" id="mobile-element">
 						</div>
 						<div class="item-description">
 							<h3>Our campus</h3>
@@ -90,7 +109,8 @@
 				<a href="#">
 					<div class="item three">
 						<div class="image-container">
-							<img src="resources/images/information-guest-lecture.jpg" alt="Pic of Oliver Sack">
+							<img src="resources/images/information-guest-lecture.jpg" alt="Pic of Oliver Sack" id="desktop-element">
+							<img src="resources/images/information-guest-lecture-mobile.jpg" alt="Pic of Oliver Sack" id="mobile-element">
 						</div>
 						<div class="item-description">
 							<h3>Our guest lecture</h3>
@@ -102,7 +122,8 @@
 				<a href="#">
 					<div class="item four">
 						<div class="image-container">
-							<img src="resources/images/information-orientation.jpg" alt="Orientation picture">
+							<img src="resources/images/information-orientation.jpg" alt="Orientation picture" id="desktop-element">
+							<img src="resources/images/information-orientation-mobile.jpg" alt="Orientation picture" id="mobile-element">
 						</div>
 						<div class="item-description">
 							<h3>Orientation date</h3>
@@ -114,7 +135,8 @@
 				<a href="#">
 					<div class="item five">
 						<div class="image-container">
-							<img src="resources/images/information-orientation.jpg" alt="Orientation picture">
+							<img src="resources/images/information-orientation.jpg" alt="Orientation picture" id="desktop-element">
+							<img src="resources/images/information-orientation-mobile.jpg" alt="Orientation picture" id="mobile-element">
 						</div>
 						<div class="item-description">
 							<h3>Orientation date</h3>
@@ -134,7 +156,7 @@
 
 			<div class="courses-container">
 
-				<div class="course one">
+				<div class="course software">
 					<div class="image-container">
 						<a href="sofware-engineering" target="_blank">
 							<img src="resources/images/course-software.jpg">
@@ -151,7 +173,7 @@
 					</div>
 				</div>
 
-				<div class="course two">
+				<div class="course computer-art">
 					<div class="image-container">
 						<a href="computer-art" target="_blank">
 							<img src="resources/images/course-computer-art.jpg">
@@ -168,7 +190,7 @@
 					</div>
 				</div>
 
-				<div class="course three">
+				<div class="course design">
 					<div class="image-container">
 						<a href="design" target="_blank">
 							<img src="resources/images/course-design.jpg">
@@ -185,7 +207,7 @@
 					</div>
 				</div>
 
-				<div class="course four">
+				<div class="course data">
 					<div class="image-container">
 						<a href="data" target="_blank">
 							<img src="resources/images/course-data.jpg">
@@ -202,7 +224,7 @@
 					</div>
 				</div>
 
-				<div class="course five">
+				<div class="course business">
 					<div class="image-container">
 						<a href="business" target="_blank">
 							<img src="resources/images/course-business.jpg">
@@ -219,7 +241,7 @@
 					</div>
 				</div>
 
-				<div class="course six">
+				<div class="course marketing">
 					<div class="image-container">
 						<a href="marketing" target="_blank">
 							<img src="resources/images/course-marketing.jpg">
@@ -237,11 +259,10 @@
 				</div>
 
 
-				</div>
-				
 			</div>
-			
+				
 		</div>
+			
 
 		<!-- THESIS EXHIBIT -->
 
@@ -252,9 +273,10 @@
 			</div>
 
 			<div class="presenter"> 
-				<div class="focus-item">
+				<div class="focus-item thesis">
 					<div class="video-container">
-						<video id="Exhibition-Movie" src="resources/videos/thesis.mp4" autoplay="" loop=""></video>
+						<video id="exhibition-movie" src="resources/videos/thesis.mp4" autoplay="" loop=""></video>
+						<video id="mobile-element" src="resources/videos/thesis.mp4" controls=""></video>
 					</div>
 					<div class="description">
 						<h3>Reimagine urban</h3>						
@@ -262,7 +284,7 @@
 					</div>					
 				</div>
 
-				<div class="selector">
+				<div class="selector thesis">
 
 					<a href="#">
 						<div class="item one">
@@ -303,7 +325,6 @@
 					<li><a href="#">Terms</a></li>
 					<li><a href="#">Privacy</a></li>
 				</ul>
-				
 			</div>
 		</div>
 
@@ -311,7 +332,7 @@
 
 
 
-		</div>
+	</div>
 
 </body>
 </html>

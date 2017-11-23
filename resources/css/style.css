@@ -59,6 +59,7 @@ video {
 .video-container {
 	display: flex;
 	align-items: center;
+	justify-content: center;
 	overflow: hidden;
 }
 
@@ -110,6 +111,10 @@ video {
 .item:hover img{
 	transform: scale(1.05);
 	transition: transform 0.2s ease-out 0.1s;
+}
+
+#mobile-element {
+	display: none;
 }
 
 /* HEADER */
@@ -174,6 +179,36 @@ video {
 	cursor: pointer;
 }
 
+.mobile-header {
+	position: fixed;
+	top: 0;
+	z-index: 5;
+	background-color: white;
+	width: 100%;
+	box-shadow: 0px 1px 5px grey;
+}
+
+.mobile-header nav {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	height: 64px;
+	width: 100%;
+}
+
+.mobile-header .image-container {
+	width: 20%;
+}
+
+.mobile-header .image-container a {
+	justify-content: center;
+	width: 100%;
+}
+
+.mobile-header .image-container img {
+	height: 2.5rem;
+}
+
 /* MAIN BANNER */
 
 .main-banner {
@@ -215,6 +250,10 @@ video {
 	cursor: pointer;
 }
 
+.main-banner .headline .button:active {
+	background-color: #197219;
+}
+
 /* UPDATES */
 
 .presenter .focus-item .description span {
@@ -250,6 +289,7 @@ video {
 	flex-direction: column;
 	background-color: white;
 	width: 25%;
+	min-width: 14rem;
 	margin: 1rem;
 	margin-top: 0;
 }
@@ -267,13 +307,17 @@ video {
 
 .courses-container .course .description h3:hover {
 	padding-left: 0.5rem;
+	color: #A1A1A1;
 	transition: padding-left 0.1s ease-out;
+	transition: color 0.1s ease-out;
 	cursor: pointer;
 }
 
 .courses-container .course .description .headline:hover {
 	padding-left: 0.5rem;
+	color: #B4B4B4;
 	transition: padding-left 0.1s ease-out;	
+	transition: color 0.1s ease-out;
 	cursor: pointer;
 }
 
@@ -309,6 +353,178 @@ video {
 	text-decoration: none;
 	color: #00B7F1;
 	margin-left: 1rem;
+}
+
+
+/* MEDIA QUERIES */
+
+@media only screen and (max-width: 1024px) {
+	h1 {
+		margin: 1rem 0;
+	}
+	h3 {
+		margin-top: 0.5rem;
+	}
+	.presenter {
+		height: 35rem;
+	}
+}
+
+@media only screen and (max-width: 980px) {
+	h1 {
+		font-size: 2.5rem;
+	}
+	h2 {
+		font-size: 2rem;
+	}
+	h3 {
+		font-size: 1.25rem;
+	}
+}
+
+@media only screen and (max-width: 850px) {
+	.main-banner {
+		flex-direction: column;
+	}
+	.main-banner .image-container {
+		width: 100%;
+		margin: 0;
+	}
+	.main-banner .headline {
+		max-width: 100%;
+		margin: 2rem 1rem;
+	}
+}
+
+@media only screen and (max-width: 650px) {
+	.header {
+		display: none;
+	}
+	#mobile-element {
+		display: block;
+	}
+	#desktop-element {
+		display: none;
+	}
+	.focus-item.updates {
+		display: none;
+	}
+	.presenter {
+		height: auto;
+	}
+	.selector.updates {
+		width: 100%;
+		padding: 1rem;
+	}
+	.item {
+		flex-direction: column;
+		margin: 0;
+		width: 100%;
+	}
+	.item .image-container {
+		overflow: hidden;
+		width: 100%;
+		padding: 0;
+	}
+	.item-description {
+		width: 100%;
+		padding: 1rem;
+		padding-left: 3rem;
+	}
+	.start-learning {
+		background-color: white;
+		padding: 0;
+	}
+	.start-learning {
+	padding: 0 1rem;
+	padding-bottom: 2rem
+	}
+	.courses-container {
+		flex-direction: column;
+	}
+	.courses-container .course {
+		width: 100%;
+		margin: 0;
+	}
+	.courses-container .course .description {
+		margin: 0;
+		margin-bottom: 0.5rem;
+		padding-top: 1.25rem;
+		padding-bottom: 1.8rem;
+		padding-left: 1rem;
+		position: relative;
+		z-index: 1;
+	}
+	.courses-container .course .description h3:hover {
+		color: inherit;
+}
+	.course .description::before {
+		content: "";
+		position: absolute;
+		top: 0; 
+		left: 0;
+		width: 100%; 
+		height: 100%;  
+		opacity: 0.3; 
+		z-index: -1;
+	}
+	.course.software .description::before {
+		background-image: url("file:///Users/marcwyss/Desktop/MarcDev/Projects/Colmar_Academy/resources/images/course-software.jpg");
+	}
+	.course.computer-art .description::before {
+		background-image: url("file:///Users/marcwyss/Desktop/MarcDev/Projects/Colmar_Academy/resources/images/course-computer-art.jpg");
+	}
+	.course.design .description::before {
+		background-image: url("file:///Users/marcwyss/Desktop/MarcDev/Projects/Colmar_Academy/resources/images/course-design.jpg");
+	}
+	.course.data .description::before {
+		background-image: url("file:///Users/marcwyss/Desktop/MarcDev/Projects/Colmar_Academy/resources/images/course-data.jpg");
+	}
+	.course.business .description::before {
+		background-image: url("file:///Users/marcwyss/Desktop/MarcDev/Projects/Colmar_Academy/resources/images/course-business.jpg");
+	}
+	.course.marketing .description::before {
+		background-image: url("file:///Users/marcwyss/Desktop/MarcDev/Projects/Colmar_Academy/resources/images/course-software.jpg");
+	}
+	.courses-container .course .image-container {
+		display: none;
+	}
+	.courses-container .course p {
+		display: none;
+	}
+	.selector.thesis {
+		display: none;
+	}
+	.focus-item.thesis .description{
+		display: none;
+	}
+	.focus-item.thesis {
+		width: 100%;
+		margin: 2rem 0;
+	}
+	#exhibition-movie {
+		display: none;
+	}
+	.footer {
+		border-top: none;
+		justify-content: center;
+		height: 2rem;
+	}
+	.footer .terms {
+		display: none;
+	}
+
+
+
+
+
+
+
+
+
+
+
+
 }
 
 
