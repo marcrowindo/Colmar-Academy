@@ -398,7 +398,7 @@ video {
 	}
 }
 
-@media only screen and (max-width: 650px) {
+@media only screen and (max-width: 650px) and (orientation: portrait) {
 	.header {
 		display: none;
 	}
@@ -546,7 +546,7 @@ video {
 		justify-content: center;
 		height: 2rem;
 	}
-	
+
 	.footer .terms {
 		display: none;
 	}
