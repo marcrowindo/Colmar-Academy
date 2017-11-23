@@ -386,10 +386,12 @@ video {
 	.main-banner {
 		flex-direction: column;
 	}
+
 	.main-banner .image-container {
 		width: 100%;
 		margin: 0;
 	}
+
 	.main-banner .headline {
 		max-width: 100%;
 		margin: 2rem 1rem;
@@ -400,52 +402,65 @@ video {
 	.header {
 		display: none;
 	}
+
 	#mobile-element {
 		display: block;
 	}
+
 	#desktop-element {
 		display: none;
 	}
+
 	.focus-item.updates {
 		display: none;
 	}
+
 	.presenter {
 		height: auto;
 	}
+
 	.selector.updates {
 		width: 100%;
 		padding: 1rem;
 	}
+
 	.item {
 		flex-direction: column;
 		margin: 0;
 		width: 100%;
 	}
+
 	.item .image-container {
 		overflow: hidden;
 		width: 100%;
 		padding: 0;
 	}
+
 	.item-description {
 		width: 100%;
 		padding: 1rem;
 		padding-left: 3rem;
 	}
+
 	.start-learning {
 		background-color: white;
 		padding: 0;
 	}
+
 	.start-learning {
 	padding: 0 1rem;
 	padding-bottom: 2rem
 	}
+
 	.courses-container {
 		flex-direction: column;
 	}
+
 	.courses-container .course {
 		width: 100%;
 		margin: 0;
 	}
+
 	.courses-container .course .description {
 		margin: 0;
 		margin-bottom: 0.5rem;
@@ -455,9 +470,11 @@ video {
 		position: relative;
 		z-index: 1;
 	}
+
 	.courses-container .course .description h3:hover {
 		color: inherit;
-}
+	}
+
 	.course .description::before {
 		content: "";
 		position: absolute;
@@ -468,63 +485,71 @@ video {
 		opacity: 0.3; 
 		z-index: -1;
 	}
+
 	.course.software .description::before {
-		background-image: url("file:///Users/marcwyss/Desktop/MarcDev/Projects/Colmar_Academy/resources/images/course-software.jpg");
+		background-image: url("../images/course-software.jpg");
+		background-position: 0% 55%;
 	}
+
 	.course.computer-art .description::before {
-		background-image: url("file:///Users/marcwyss/Desktop/MarcDev/Projects/Colmar_Academy/resources/images/course-computer-art.jpg");
+		background-image: url("../images/course-computer-art.jpg");
+		background-position: 0% 0%;
 	}
+
 	.course.design .description::before {
-		background-image: url("file:///Users/marcwyss/Desktop/MarcDev/Projects/Colmar_Academy/resources/images/course-design.jpg");
+		background-image: url("../images/course-design.jpg");
+		background-position: 0% 70%;
 	}
+
 	.course.data .description::before {
-		background-image: url("file:///Users/marcwyss/Desktop/MarcDev/Projects/Colmar_Academy/resources/images/course-data.jpg");
+		background-image: url("../images/course-data.jpg");
+		background-position: 0% 0%;
 	}
+
 	.course.business .description::before {
-		background-image: url("file:///Users/marcwyss/Desktop/MarcDev/Projects/Colmar_Academy/resources/images/course-business.jpg");
+		background-image: url("../images/course-business.jpg");
+		background-position: 0% 55%;
 	}
+
 	.course.marketing .description::before {
-		background-image: url("file:///Users/marcwyss/Desktop/MarcDev/Projects/Colmar_Academy/resources/images/course-software.jpg");
+		background-image: url("../images/course-marketing.jpg");
+		background-position: 0% 0%;
 	}
+
 	.courses-container .course .image-container {
 		display: none;
 	}
+
 	.courses-container .course p {
 		display: none;
 	}
+
 	.selector.thesis {
 		display: none;
 	}
+
 	.focus-item.thesis .description{
 		display: none;
 	}
+
 	.focus-item.thesis {
 		width: 100%;
 		margin: 2rem 0;
 	}
+
 	#exhibition-movie {
 		display: none;
 	}
+
 	.footer {
 		border-top: none;
 		justify-content: center;
 		height: 2rem;
 	}
+	
 	.footer .terms {
 		display: none;
 	}
-
-
-
-
-
-
-
-
-
-
-
-
 }
 
 
